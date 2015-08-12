@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Naukri Profile Update Test Suite]">
+  <listeners>
+    <listener class-name="com.Naukri.listener.TestsListenerAdapter"/>
+  </listeners>
+  <test name="Login test(failed)">
+    <classes>
+      <class name="com.Naukri.Test.NaukriLogin">
+        <methods>
+          <include name="profiledailyupdate" invocation-numbers="1 3 4"/>
+        </methods>
+      </class> <!-- com.Naukri.Test.NaukriLogin -->
+    </classes>
+  </test> <!-- Login test(failed) -->
+</suite> <!-- Failed suite [Naukri Profile Update Test Suite] -->
