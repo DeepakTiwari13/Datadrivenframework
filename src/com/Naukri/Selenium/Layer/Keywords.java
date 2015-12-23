@@ -19,9 +19,9 @@ public class Keywords {
 	WebDriver driver = null;
 	Properties OR = null;
 	FileInputStream Fin = null;
-	private Keywords session;
+	static Keywords session;
 
-	public Keywords() throws Exception {
+	private Keywords() throws Exception {
 		Naukri_logs.info("Inside Keywords constructor");
 		OR = new Properties();
 		Fin = new FileInputStream(System.getProperty("user.dir")
@@ -29,7 +29,7 @@ public class Keywords {
 		OR.load(Fin);
 	}
 
-	public Keywords getinstance() throws Exception {
+	public static Keywords getinstance() throws Exception {
 		Naukri_logs.info("Initializing single ton class");
 		if (session == null) {
 			session = new Keywords();
